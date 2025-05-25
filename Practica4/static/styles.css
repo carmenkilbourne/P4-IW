@@ -1,0 +1,111 @@
+.ListaContactos {
+  display: flex;
+  justify-content: flex-end;
+}
+.Layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  left: 0;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+  a {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  ul {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
+
+.Formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.MensajeCreadoUsuario {
+  color: green;
+}
+.footer {
+  background-color: #f1f1f1;
+  color: white;
+  padding: 10px 0 10px 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 10%;
+  width: 80%;
+  border-top: 1px solid #bdbdbd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    border-left: 0;
+    width: 75%;
+    height: 30px;
+    border-right: 10px;
+  }
+  button {
+    margin-left: 50px;
+    right: 0;
+  }
+}
+.messageDrch {
+  background: #eaaba6;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 70%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  text-align: left;
+  display: block;
+}
+
+.messageIzq {
+  background: #b7f1b7;
+  margin-right: auto;
+  margin-left: 0;
+  max-width: 70%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  text-align: left;
+  display: block;
+}
+.BotonesSidebar {
+  padding: 0;
+  margin: 0;
+}
+.MostrarMensajess {
+  list-style: none;
+  display: flex;
+  overflow: auto;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+}
