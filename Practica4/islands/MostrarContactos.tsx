@@ -1,7 +1,7 @@
 import { useEffect, useState } from "preact/hooks";
-import { FunctionalComponent } from "preact";
 import { chatSeleccionado, enviar } from "../static/signals.ts";
 import { useSignalEffect } from "@preact/signals";
+import { FunctionalComponent } from "https://esm.sh/preact@10.25.4/src/index.js";
 type Data={
     _id:string;
     name:string;
@@ -47,7 +47,7 @@ useEffect(() => {
     });
     return(
         <div>
-             <ul class="BotonesSidebar">
+             <ul>
                 {contactos?.data.map((contacto) => (
                     <li key={contacto._id}>
                         <button onClick={()=>chatSeleccionado.value=contacto.chatId}>
