@@ -8,18 +8,25 @@
   height: 100vh;
 }
 .sidebar {
-  margin: 0;
-  padding: 0;
   width: 25%;
-  left: 0;
-  background-color: #f1f1f1;
-  height: 100%;
-  overflow: auto;
+  background-color: #f7f7f7;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  padding: 15px;
   a {
     width: 100%;
   }
   button {
+    display: block;
     width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background: darkgrey;
+    text-align: left;
+    transition: background 0.2s;
+    cursor: pointer;
   }
   ul {
     width: 100%;
@@ -30,37 +37,47 @@
 .Formulario {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 15px;
   align-items: center;
   margin-top: 50px;
 }
 .MensajeCreadoUsuario {
   color: green;
+  font-weight: bold;
 }
 .footer {
-  background-color: #f1f1f1;
-  color: white;
-  padding: 10px 0 10px 0;
-  position: fixed;
-  right: 0;
+ position: sticky;
   bottom: 0;
-  height: 10%;
-  width: 80%;
-  border-top: 1px solid #bdbdbd;
+  background-color: #f7f7f7;
+  border-top: 1px solid #ddd;
+  padding: 12px 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
   input {
-    border-left: 0;
-    width: 75%;
-    height: 30px;
-    border-right: 10px;
+     flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
   }
+
   button {
-    margin-left: 50px;
-    right: 0;
+   padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #4caf50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  }
+
+  button:hover {
+    background: #131813;
   }
 }
+
 .messageDrch {
   background: #eaaba6;
   margin-left: auto;
@@ -93,19 +110,20 @@
   margin: 0;
 }
 .MostrarMensajess {
-  list-style: none;
-  display: flex;
-  overflow: auto;
-  flex-direction: column-reverse;
-  height: 100%;
-  width: 100%;
+  flex-grow: 1;           
+  overflow-y: auto;       
+  padding: 10px;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .chat {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
   height: 100%;
-  width: 100%;
+  width: 75%;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow-y: auto; /* scroll en todo */
 }
